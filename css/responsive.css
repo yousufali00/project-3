@@ -1,0 +1,763 @@
+/* mobile nav */
+
+
+#mobile-nav{
+    position: fixed;
+    left: -320px;
+    width: 320px;
+    height: 100vh;
+    z-index: 9999;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.mobile-nav-active{
+    left: 0 !important;
+}
+
+.mobile-nav-bg{
+    background: #4F2BBF;
+    opacity: 0.9;
+}
+.mobile-brand img{
+    padding-top: 10px;
+}
+
+.mobile-btn{
+    margin-left: 15px;    
+}
+
+.mobile-search-btn {
+    display: block;
+    margin-left: 20px;
+    margin-top: 8px;
+    
+}
+
+.mobile-search-btn a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.mobile-search-box{
+    position: absolute;
+    opacity: 0;
+    width: 300px;
+    height: 43px;
+    right: -260px;
+    top: 0;
+    padding: 5px 6px;
+    border-radius: 2px;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    visibility: hidden;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.mobile-search-box-input a{
+    color: #4923B7;
+    font-size: 18px;
+    position: absolute;
+    right: 33px;
+    top: 9px;
+    opacity: 0;
+    z-index: 9;
+}
+
+.mobile-nav{
+    display: inline-block;
+
+}
+
+.mobile-nav-event h5{ 
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.mobile-nav-event-item-01,
+.mobile-nav-event-item-02{
+    background: #140C33;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #231650;
+    border-radius: 4px;
+    width: 255px;
+    height: 76px;
+    color: #fff;
+}
+
+.mobile-nav-event-item-01 .time,
+.mobile-nav-event-item-02 .time{
+    background: #231650;
+    padding: 15px 17px;
+    margin-bottom: 0;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.mobile-nav-event-item-01{
+    margin-top: -5px;
+}
+
+.mobile-nav-event-item-02{
+    
+}
+
+/* hover state */
+
+/*
+#mobile-navbar-button:hover .bar-01,
+#mobile-navbar-button:hover .bar-03{
+    width: px;
+    margin: 5px auto;
+}
+*/
+
+
+
+/*=================================
+    Bootstrap 4 Media Queries
+=================================*/
+
+/*Large devices (Desktop & Laptop)*/
+
+@media (min-width: 1200px) and (max-width: 1299px){
+    #mobile-navbar-button{
+        display: none;
+    }
+}
+
+/* Medium Devices (Landscape tablets and desktop)*/
+
+@media (min-width: 992px) and (max-width: 1199px){
+    #mobile-navbar-button{
+        display: none;
+    }
+    
+    .navbar .navbar-brand {
+        margin-left: 0;
+    }
+    
+    
+    .service-bottom-content-left iframe{
+        width: 460px;
+    }
+    
+    .price-amount .doller {
+        left: 35px;
+    }
+    
+    .price-amount .doller-02, .price-amount .doller-03 {
+        left: 25px;
+    }
+    
+    .button-top-line{
+        left: 143px;
+    }
+    
+    #footer .btn-group button{
+        margin-bottom: 10px;
+    }
+    
+    #footer .event .time{
+        padding: 5px 17px;
+    }
+    
+}
+
+/* Small Devices (portrait tablets and desktop)*/
+
+@media (min-width: 768px) and (max-width: 991px){
+/*    mobile nav */
+    #mobile-navbar-button{
+        display: block;
+        background: none;
+        border: 0;
+        outline: 0;
+    }
+    
+    #mobile-navbar-button-bg{
+        background: #
+    }
+    
+    #mobile-navbar-button span{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 25px;
+        height: 3px;
+        background: #DB3033;
+        margin-bottom: 5px;
+    }
+    
+    .navbar .navbar-brand {
+        margin-left: 0;
+    }
+    
+    .service-item{
+        margin-bottom: 30px;
+    }
+    
+    .service-item span{
+    display: none;
+    }
+    
+    .service-bottom-headding-left h4 {
+        font-size: 46px;
+        font-weight: 600;
+    }
+    
+    .service-bottom-content-right iframe{
+        width: 350px;
+        height: 320px;
+        margin-top: 50px;
+    }
+    
+    
+    .button-group {
+        margin-left: 0; 
+    }
+    
+    .price-amount .doller {
+        left: 14px;
+    }
+    
+    .price-amount .doller-02, .price-amount .doller-03{
+        left: 6px;
+    }
+    
+    .price-amount {
+        font-size: 32px;
+    }
+    
+    .price-amount .duration{
+        font-size: 12px;
+    }
+    
+    .price-table-list li {
+        margin-bottom: 14px;
+        font-size: 13px;
+    }
+    .button-top-line{
+        left: 50%;
+    }
+    
+    .service-item-status span{
+        display: block;
+    }
+    
+    .date-border{
+        width: 30px;
+    }
+    
+    .post-content p {
+        font-size: 14px;
+    }
+    
+    #footer .btn-group button{
+        margin-bottom: 10px;
+    }
+    
+    #footer .event .time{
+        padding: 5px 17px;
+    }
+    
+    
+}
+
+/* Extra Small Devices (portrait tablets and Landscape phones)*/
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /*    mobile nav */
+    #mobile-navbar-button{
+        display: block;
+        background: none;
+        border: 0;
+        outline: 0;
+    }
+    
+    #mobile-navbar-button-bg{
+        background: #
+    }
+    
+    #mobile-navbar-button span{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 25px;
+        height: 3px;
+        background: #DB3033;
+        margin-bottom: 5px;
+    }
+    
+    .navbar .navbar-brand {
+        margin-left: 0;
+    }
+    
+    .service-item{
+        margin-bottom: 30px;
+    }
+    
+    .service-item span{
+    display: none;
+    }
+    
+    .service-bottom-headding-left h4 {
+        font-size: 42px;
+        font-weight: 600;
+    }
+    
+    .service-bottom-headding-right h6{
+        line-height: 28px;
+    }
+    
+    .service-target-item {
+        margin-bottom: 15px;
+    }
+    
+    .service-bottom-content-right iframe{
+        width: 350px;
+        height: 320px;
+        margin-top: 50px;
+    }
+    
+    .service-bottom-content-right iframe{
+        width: 100%;
+    }
+    
+    .button-group {
+        margin-left: 0; 
+    }
+    
+    .button-group .btn.design{
+        margin-top: 10px;
+        margin-left: 29%;
+    }
+    
+    .button-group .btn.photography{
+        margin-top: 10px;
+        
+    }
+    
+    .price-table-headding h4{
+        font-size: 18px;
+    }
+    
+    .price-table:hover .price-table-headding:before{
+        top: 90px;
+        left: 35%;
+    }
+    .price-amount .doller {
+        left: -1px;
+    }
+    
+    .price-amount .doller-02, .price-amount .doller-03{
+        left: -7px;
+    }
+    
+    .price-amount .doller{
+        font-size: 18px;
+    }
+    .price-amount {
+        font-size: 24px;
+    }
+    
+    .price-amount .duration{
+        font-size: 10px;
+    }
+    
+    .price-amount .duration{
+        margin-left: -7px;
+    }
+    .price-table-list li {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    .button-top-line{
+        left: 50%;
+    }
+    
+    #skill{
+        padding-bottom: 0;
+    }
+    
+    .our-service-status{
+        top: 102%;
+        
+    }
+    
+    .service-item-status{
+        margin-bottom: 25px;
+    }
+    
+    .service-item-status span{
+        display: block;
+    }
+    
+    #demo{
+        margin-top: 850px;
+    }
+    
+    .review-headding-title{
+        font-size: 42px;
+    }
+    
+    #review .owl-nav{
+        top: -196px;
+        right: 15px;
+    }
+    
+    .review-text {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .date-border{
+        width: 30px;
+    }
+    
+    .post-content p {
+        font-size: 14px;
+    }
+    
+    .date-border {
+        width: 20px;
+    }
+    
+    #contact .headding-right {
+        text-align: center !important;
+        margin-top: 35px;
+    }
+    
+    
+    
+    #footer .btn-group button{
+        margin-bottom: 10px;
+    }
+    
+    #footer .event .time{
+        padding: 5px 17px;
+    }
+    
+}
+
+
+/* Extra Small Devices (portrait tablets and Landscape phones)*/
+
+@media (max-width: 575px) {
+    
+    /*    mobile nav */
+    
+    #mobile-nav{
+        width: 300px;
+    }
+    
+    #mobile-navbar-button{
+        display: block;
+        background: none;
+        border: 0;
+        outline: 0;
+        margin-right: 5px;
+        margin-top: 7px;
+    }
+    
+    
+    #mobile-navbar-button-bg{
+        background: #
+    }
+    
+    #mobile-navbar-button span{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 25px;
+        height: 3px;
+        background: #DB3033;
+        margin-bottom: 5px;
+    }
+    
+    .mobile-search-btn {
+        display: block;
+        margin-left: 80px;
+        margin-top: 15px;
+    }
+    
+    .mobile-search-box{
+        top: 9px;
+        width: 290px;
+    }
+    
+    .mobile-search-box-input a{
+        top: 16px;
+    }
+    
+    .navbar .navbar-brand {
+        margin-left: 10px;
+    }
+    
+    .slider-inner-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+        margin-top: 45px;
+    }
+    
+    .slider-inner-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+        margin-top: 45px;
+    }
+    
+    .our-service-status{
+        top: 102%; 
+    }
+    
+    .service-left-title{
+        font-size: 38px;
+    }
+    
+    .service-left-text{
+        margin-top: 0;
+    }
+    
+    .heading-right{
+        text-align: center !important;
+        margin-bottom: 18px;
+    } 
+    
+    .service-item{
+        margin-bottom: 30px;
+    }
+    
+    .service-item span{
+    display: none;
+    }
+    
+    .service-bottom-headding-left h4 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    
+    .service-bottom-headding-right h6{
+        line-height: 28px;
+        font-size: 18px;
+    }
+    
+    .service-bottom-headding-right p {
+        margin-top: 25px;
+    }
+    
+    .service-target-item {
+        margin-bottom: 18px;
+    }
+    
+    .service-target-icon{
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .target-item-content h6{
+        text-align: center;
+    }
+    
+    .service-bottom-content-right iframe{
+        width: 350px;
+        height: 320px;
+        margin-top: 50px;
+    }
+    
+    .service-bottom-content-right iframe{
+        width: 100%;
+    }
+    
+    #work .headding h3, .price-headding-title {
+        font-size: 38px;
+    }
+    
+    #work .headding p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .button-group {
+        margin-left: 0; 
+    }
+    
+    .button-group .btn.design{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    .button-group .btn.photography{
+        margin-top: 0;   
+    }
+    
+    #price{
+        margin: 0;
+    }
+    
+    .price-headding-text {
+        margin-top: 15px;
+    }
+    
+    .price-table-wrapper{
+        margin-top: 20px;
+    }
+    
+    .price-table{
+        margin-bottom: 25px;
+    }
+    
+    .price-table-headding h4{
+        font-size: 28px;
+    }
+    
+    .price-table:hover .price-table-headding:before{
+        top: 90px;
+        left: 35%;
+    }
+    .price-amount .doller {
+        left: 72px;
+        font-size: 18px;
+    }
+    
+    .price-amount .doller-02, .price-amount .doller-03{
+        left: 62px;
+    }
+    
+    .price-amount {
+        font-size: 32px;
+    }
+    
+    .price-amount .duration{
+        font-size: 12px;
+    }
+    
+    .price-amount .duration{
+        margin-left: -7px;
+    }
+    .price-table-list li {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+    .button-top-line{
+        left: 50%;
+    }
+    
+    #skill{
+        padding-bottom: 0;
+    }
+    
+    .skill-headding-title{
+        font-size: 38px;   
+    }
+    
+    .skill-content-wrapper {
+        padding-top: 15px;
+    }
+    
+    .skill-content-left h4 {
+        font-size: 20px;
+        line-height: 30px;
+        word-spacing: 2px;
+        margin-bottom: 25px;
+    }
+    
+    .service-item-status {
+        margin-bottom: 25px;
+    }
+    .demo-headding{
+        padding: 0;
+    }
+    
+    .demo-headding-title{
+        font-size: 38px;
+    }    
+    
+    #demo{
+        margin-top: 850px;
+    }
+    
+    .review-headding-title{
+        font-size: 38px;
+    }
+    
+    #review .owl-nav{
+        top: -146px;
+        right: 8px;
+    }
+    
+    #review .owl-carousel .owl-nav button.owl-next, #review .owl-carousel .owl-nav button.owl-prev {
+        font-size: 18px;
+    }
+    
+    
+    .review-text {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    
+    .blog-headding-text{
+        margin-top: 15px;
+    }
+    
+    .blog-headding-right{
+        text-align: center !important;
+        margin-top: 15px;
+    }
+    
+    .blog-post{
+        margin-bottom: 30px;    
+    }
+    
+    .date-border{
+        width: 30px;
+    }
+    
+    .post-content p {
+        font-size: 14px;
+    }
+    
+    .date-border {
+        width: 20px;
+    }
+    
+    #contact .headding-right {
+        text-align: center !important;
+        margin-top: 35px;
+    }
+    
+    
+    #footer .btn-group button{
+        margin-bottom: 10px;
+    }
+    
+    #footer .event .time{
+        padding: 5px 17px;
+    }
+    
+    .footer-service-list, .footer-ouick-link, .footer-event {
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .footer-service-list h5, .footer-ouick-link h5, .footer-event h5 {
+        margin-bottom: 20px;
+    }
+    
+    .footer-bottom-left, .footer-bottom-right{
+        text-align: center !important;
+    }
+    
+    .footer-social-media{
+        padding: 0;
+    }
+}
+
+
+
+
